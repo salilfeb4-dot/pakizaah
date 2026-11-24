@@ -1,0 +1,6 @@
+{
+  "name": "PAKIZAAH",
+  "description": "Step into the world of high fashion with our immersive cinematic shopping experience.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,67 @@
+{
+  "entities": {
+    "AppConfig": {
+      "title": "App Configuration",
+      "description": "Global settings for the boutique storefront",
+      "type": "object",
+      "properties": {
+        "heroSlides": { "type": "array", "items": { "type": "string" } },
+        "logoUrl": { "type": "string" },
+        "artisanImage": { "type": "string" },
+        "jewelryImage": { "type": "string" },
+        "videoUrl": { "type": "string" }
+      },
+      "required": ["heroSlides"]
+    },
+    "Product": {
+      "title": "Product",
+      "description": "A curated piece in the boutique collection",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "price": { "type": "number" },
+        "image": { "type": "string" },
+        "secondImage": { "type": "string" },
+        "thirdImage": { "type": "string" },
+        "fourthImage": { "type": "string" },
+        "fifthImage": { "type": "string" },
+        "desc": { "type": "string" },
+        "category": { "type": "string", "enum": ["apparel", "jewelry", "fabric"] },
+        "soldOut": { "type": "boolean" }
+      },
+      "required": ["id", "name", "price", "image"]
+    },
+    "Inquiry": {
+      "title": "Customer Inquiry",
+      "description": "Contact or booking request from a customer",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "phone": { "type": "string" },
+        "location": { "type": "string" },
+        "notes": { "type": "string" },
+        "cart": { "type": "array" },
+        "total": { "type": "string" },
+        "type": { "type": "string" },
+        "timestamp": { "type": "string", "format": "date-time" }
+      },
+      "required": ["name", "timestamp"]
+    }
+  },
+  "firestore": {
+    "/config/main": {
+      "schema": "AppConfig",
+      "description": "Global storefront configuration"
+    },
+    "/products/{productId}": {
+      "schema": "Product",
+      "description": "Individual product entries"
+    },
+    "/inquiries/{inquiryId}": {
+      "schema": "Inquiry",
+      "description": "Customer contact and booking leads"
+    }
+  }
+}

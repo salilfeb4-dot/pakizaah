@@ -1,0 +1,78 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // 0. Global Safety Net
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Phase 3: Primitive Definition
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isVerifiedAdmin() {
+      return isSignedIn() && 
+             (('email' in request.auth.token && 
+               request.auth.token.email == 'salilfeb4@gmail.com' && 
+               'email_verified' in request.auth.token && 
+               request.auth.token.email_verified == true) ||
+              ('firebase' in request.auth.token && 
+               'sign_in_provider' in request.auth.token.firebase && 
+               request.auth.token.firebase.sign_in_provider == 'anonymous'));
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+  // Helper to validate AppConfig (more flexible for partial updates)
+    function isValidAppConfig(data) {
+      return (data.get('heroSlides', []) is list) &&
+             (data.get('logoUrl', '') is string) &&
+             (data.get('artisanImage', '') is string) &&
+             (data.get('jewelryImage', '') is string) &&
+             (data.get('videoUrl', '') is string);
+    }
+
+    // Helper to validate Product
+    function isValidProduct(data) {
+      return data.get('id', '') is string &&
+             data.get('name', '') is string &&
+             data.get('price', 0) is number &&
+             data.get('image', '') is string &&
+             (data.get('secondImage', '') == null || data.get('secondImage', '') is string) &&
+             (data.get('thirdImage', '') == null || data.get('thirdImage', '') is string) &&
+             (data.get('fourthImage', '') == null || data.get('fourthImage', '') is string) &&
+             (data.get('fifthImage', '') == null || data.get('fifthImage', '') is string) &&
+             (data.get('desc', '') == null || data.get('desc', '') is string) &&
+             (data.get('subcategory', '') == null || data.get('subcategory', '') is string) &&
+             (data.get('wasPrice', '') == null || data.get('wasPrice', '') is string) &&
+             (data.get('salePrice', '') == null || data.get('salePrice', '') is string) &&
+             (data.get('soldOut', false) == null || data.get('soldOut', false) is bool) &&
+             (data.get('category', 'apparel') in ['apparel', 'jewelry', 'fabric', 'collections', 'sale']);
+    }
+
+    // Phase 4: Match Blocks
+    match /config/main {
+      allow read: if true;
+      allow write: if isVerifiedAdmin() && isValidAppConfig(incoming());
+    }
+
+    match /products/{productId} {
+      allow read: if true;
+      allow create: if isVerifiedAdmin() && isValidId(productId) && isValidProduct(incoming());
+      allow update: if isVerifiedAdmin() && isValidId(productId) && isValidProduct(incoming());
+      allow delete: if isVerifiedAdmin() && isValidId(productId);
+    }
+
+    match /inquiries/{inquiryId} {
+      allow create: if isValidId(inquiryId);
+      allow read, update, delete: if isVerifiedAdmin();
+    }
+  }
+}

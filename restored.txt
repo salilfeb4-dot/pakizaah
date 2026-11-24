@@ -1,0 +1,179 @@
+{
+  "applets": [{
+    "lastAccessTime": "2026-05-07T16:27:30.136756Z",
+    "firstAccessTime": "2026-04-28T18:38:55.293494Z",
+    "source": {
+      "sourceType": "SPANNER",
+      "spanner": {
+        "id": "1495930b-7661-4ef0-ae1b-db587287aa85"
+      }
+    },
+    "name": "Pakizaah Boutique \u0026 Atelier",
+    "description": "Luxury boutique for heritage apparel and jewelry."
+  }, {
+    "lastAccessTime": "2026-05-07T16:14:04.678810Z",
+    "firstAccessTime": "2026-03-08T08:50:43.504027Z",
+    "source": {
+      "sourceType": "SPANNER",
+      "spanner": {
+        "id": "899e4b5d-84ee-41e6-916d-db6daf07fc1e"
+      }
+    },
+    "name": "PASSION EDUCATION ACADEMY",
+    "description": "A comprehensive tuition booking and learning management platform for Mathematics, Science, and English students."
+  }, {
+    "lastAccessTime": "2026-05-07T15:54:30.313335Z",
+    "firstAccessTime": "2026-04-30T17:35:44.173803Z",
+    "source": {
+      "sourceType": "SPANNER",
+      "spanner": {
+        "id": "0200c022-be4a-4be7-938b-b48acff41f08"
+      }
+    },
+    "name": "Remix: PAKIZAAH Boutique",
+    "description": "Premium boutique for exquisite jewelry, fine fabrics, and curated apparel from India."
+  }, {
+    "lastAccessTime": "2026-05-07T15:40:05.943333Z",
+    "firstAccessTime": "2026-03-10T22:43:19.992155Z",
+    "source": {
+      "sourceType": "SPANNER",
+      "spanner": {
+        "id": "8ecd6d24-06c3-4b6b-a78c-0f80b8780999"
+      }
+    },
+    "name": "PAKIZAAH",
+    "description": "A premium fashion brand specializing in exquisite jewelry, fine fabrics, and curated fashion essentials."
+  }, {
+    "lastAccessTime": "2026-05-07T15:19:42.074455Z",
+    "firstAccessTime": "2026-04-28T19:22:23.766314Z",
+    "source": {
+      "sourceType": "SPANNER",
+      "spanner": {
+        "id": "6ef27208-ef56-445b-9731-ba53e4f7f731"
+      }
+    },
+    "name": "Remix: PAKIZAAH",
+    "description": "A premium fashion brand specializing in exquisite jewelry, fine fabrics, and curated fashion essentials."
+  }, {
+    "lastAccessTime": "2026-04-25T14:31:05.777973Z",
+    "firstAccessTime": "2026-04-25T12:30:31.743489Z",
+    "source": {
+      "sourceType": "SPANNER",
+      "spanner": {
+        "id": "9a911128-1c56-4ab5-ae05-b8310396ec82"
+      }
+    },
+    "name": "PAKIZAAH",
+    "description": "A luxury boutique for handcrafted jewelry and premium designer clothing. Experience timeless elegance with our artisanal collections."
+  }, {
+    "lastAccessTime": "2026-04-25T12:25:04.762279Z",
+    "firstAccessTime": "2026-04-21T16:21:23.282260Z",
+    "source": {
+      "sourceType": "SPANNER",
+      "spanner": {
+        "id": "776e7ef7-e2e1-48e8-b54e-2e23fad7fbc0"
+      }
+    },
+    "name": "Remix: PAKIZAAH",
+    "description": "A premium fashion brand specializing in exquisite jewelry, fine fabrics, and curated fashion essentials."
+  }, {
+    "lastAccessTime": "2026-04-21T16:02:10.897533Z",
+    "firstAccessTime": "2026-04-11T10:49:33.091502Z",
+    "source": {
+      "sourceType": "SPANNER",
+      "spanner": {
+        "id": "0a2f0bb1-cad1-4897-ba98-05e47ee3ce62"
+      }
+    },
+    "name": "Remix: PASSION EDUCATION ACADEMY",
+    "description": "A comprehensive tuition booking and learning management platform for Mathematics, Science, and English students, featuring teacher availability management and Google Login integration."
+  }, {
+    "lastAccessTime": "2026-04-18T14:36:21.963859Z",
+    "firstAccessTime": "2026-04-18T14:28:23.459278Z",
+    "source": {
+      "sourceType": "SPANNER",
+      "spanner": {
+        "id": "1b44b125-34b8-4b4d-808c-1c7873b9a674"
+      }
+    },
+    "name": "Remix: Remix: Remix: PASSION EDUCATION ACADEMY",
+    "description": "A comprehensive tuition booking and learning management platform for Mathematics, Science, and English students, featuring teacher availability management and Google Login integration."
+  }, {
+    "lastAccessTime": "2026-04-18T14:27:02.292763Z",
+    "firstAccessTime": "2026-04-18T14:10:31.697361Z",
+    "source": {
+      "sourceType": "SPANNER",
+      "spanner": {
+        "id": "12ba54d5-cdf4-4937-8e11-b342de4587bd"
+      }
+    },
+    "name": "Remix: Remix: PASSION EDUCATION ACADEMY",
+    "description": "A comprehensive tuition booking and learning management platform for Mathematics, Science, and English students, featuring teacher availability management and Google Login integration."
+  }, {
+    "lastAccessTime": "2026-04-14T10:55:34.800897Z",
+    "firstAccessTime": "2026-04-14T09:36:13.408670Z",
+    "source": {
+      "sourceType": "SPANNER",
+      "spanner": {
+        "id": "446388bd-56f3-4618-91ea-e0304673079d"
+      }
+    },
+    "name": "Kuch Teri Kuch Meri",
+    "description": "A platform for anonymous conversations about joys, sorrows, and interests with strangers."
+  }, {
+    "lastAccessTime": "2026-04-11T10:49:03.086154Z",
+    "firstAccessTime": "2026-03-31T14:51:48.583161Z",
+    "source": {
+      "sourceType": "SPANNER",
+      "spanner": {
+        "id": "37e84738-65ff-4acc-b5a8-6b1e0883b18b"
+      }
+    },
+    "name": "PASSION EDUCATION ACADEMY",
+    "description": "A comprehensive tuition booking and learning management platform for Mathematics, Science, and English students, featuring teacher availability management and Google Login integration."
+  }, {
+    "lastAccessTime": "2026-04-10T17:32:41.080654Z",
+    "firstAccessTime": "2026-03-31T14:48:22.644233Z",
+    "source": {
+      "sourceType": "SPANNER",
+      "spanner": {
+        "id": "16df2b69-cb27-4aab-a7aa-163b81527293"
+      }
+    },
+    "name": "Remix: PASSION EDUCATION ACADEMY",
+    "description": "A comprehensive tuition booking and learning management platform for Mathematics, Science, and English students."
+  }, {
+    "lastAccessTime": "2026-03-31T14:26:15.081286Z",
+    "firstAccessTime": "2026-03-31T14:26:15.081286Z",
+    "source": {
+      "sourceType": "SPANNER",
+      "spanner": {
+        "id": "18ece444-499c-4ad3-b810-88a14e7ab619"
+      }
+    },
+    "name": "Remix: PASSION EDUCATION ACADEMY",
+    "description": "A comprehensive tuition booking and learning management platform for Mathematics, Science, and English students."
+  }, {
+    "lastAccessTime": "2026-03-22T18:33:38.334348Z",
+    "firstAccessTime": "2026-03-22T18:18:46.017746Z",
+    "source": {
+      "sourceType": "SPANNER",
+      "spanner": {
+        "id": "6de27e65-6470-4861-bef9-44efc94af2db"
+      }
+    },
+    "name": "Mars Plucky | Creative Advertising Agency",
+    "description": "A bold, creative, and out-of-this-world advertising agency specializing in high-end visual storytelling and brand strategy."
+  }, {
+    "lastAccessTime": "2026-03-22T07:27:16.378491Z",
+    "firstAccessTime": "2026-03-21T16:58:16.290889Z",
+    "source": {
+      "sourceType": "SPANNER",
+      "spanner": {
+        "id": "e60c605b-b12e-4e6d-af26-db4cabed822d"
+      }
+    },
+    "name": "Nordic Pharma Salmon Oil",
+    "description": "Premium Arctic Salmon Fish Oil - Purity from the Deep Nordic Waters."
+  }]
+}
